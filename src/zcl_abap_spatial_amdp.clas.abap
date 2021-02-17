@@ -50,7 +50,7 @@ CLASS zcl_abap_spatial_amdp IMPLEMENTATION.
                                   i_longitude,
                                   NEW ST_POINT(i_longitude, i_latitude).ST_SRID(4326)
                                 );
-                                
+
   ENDMETHOD.
 
   METHOD get_nearest
@@ -64,7 +64,7 @@ CLASS zcl_abap_spatial_amdp IMPLEMENTATION.
                   NEW ST_POINT(i_longitude, i_latitude).ST_SRID(4326).ST_Distance(geo, 'kilometer') AS distance
                   FROM zchargingpoints
                   ORDER BY distance;
-                  
+
   ENDMETHOD.
 
 ENDCLASS.
