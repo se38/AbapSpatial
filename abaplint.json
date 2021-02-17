@@ -21,7 +21,7 @@
     }
   ],
   "syntax": {
-    "version": "v754sp00",
+    "version": "v754",
     "errorNamespace": "^(Z|Y|LCL_|TY_|LIF_)",
     "globalConstants": [
       "icon_dummy",
